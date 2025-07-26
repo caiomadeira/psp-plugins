@@ -1,9 +1,9 @@
 #include <pspmoduleinfo.h>
 
-#include "gui.h"
-#include "worker.h"
-#include "control.h"
-#include "globals.h"
+#include "src/gui.h"
+#include "src/worker.h"
+#include "src/control.h"
+#include "src/globals.h"
 
 #ifndef MAJOR_VERSION
 #define MAJOR_VERSION 0
