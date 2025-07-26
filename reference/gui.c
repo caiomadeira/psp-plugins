@@ -15,8 +15,7 @@
 int (*_sceDisplaySetFrameBufferInternal)(int pri, void* topaddr,
     int bufferwidth, int pixelformat, int sync);
 
-int sceDisplaySetFrameBufferInternalHook(int pri, void* topaddr,
-    int bufferwidth, int pixelformat, int sync) {
+int sceDisplaySetFrameBufferInternalHook(int pri, void* topaddr, int bufferwidth, int pixelformat, int sync) {
     globals.fpsCounter++;
     return _sceDisplaySetFrameBufferInternal(pri, topaddr, bufferwidth,
         pixelformat, sync);

@@ -1,5 +1,5 @@
-TARGET = missyhud
-OBJS = main.o src/control.o src/worker.o src/gui.o src/utils.o include/blit.o include/hook.o
+TARGET = myhud
+OBJS = main.o include/blit.o
 
 MISSYHUD_MAJOR_VERSION := 0
 MISSYHUD_MINOR_VERSION := 6
@@ -13,7 +13,7 @@ CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti
 ASFLAGS = $(CFLAGS)
 
 INCDIR = include
-LIBS = -lpspuser -lpsppower
+LIBS = -lpspuser
 
 PSPSDK=$(shell psp-config --pspsdk-path)
 include $(PSPSDK)/lib/build_prx.mak
